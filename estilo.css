@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+	background-color: #ddd;
+	font-family: Tahoma;
+}
+
+#corpo {
+	width: 800px;
+	height: 100%;
+	margin: auto;
+	box-shadow: 0px 0px 30px #777;
+	padding: 20px;
+	background-color: white;
+}
+
+nav{
+    display: inline-flex;
+    background-color:#000000 ;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    box-shadow: 3px 3px 0.3px rgba(0,0,0,.3);
+}
+nav > p{
+    margin: 0;
+    padding: 10px;
+}
+nav > picture{
+    margin: 0%;
+    padding: 10px;
+}
+
+p.entrar {
+    padding: 10px;
+    text-align: right;
+    font-size: 10px;
+}
+
+#busca {
+    font-size: 11px;
+    text-align: right;
+    padding: 5px;
+}
+
+table.listagem{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;  /* Para tirar o espaço entre as células.*/
+}
+
+table.listagem tr{
+    height: 50px;
+}
+
+table.listagem td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table.listagem tr:nth-child(even){       /*//even significa ímpar, para ficar uma linha sim, outra não.*/
+    background-color: #f2f2f2;
+}
+
+table.listagem td:nth-child(1) {
+    width: 50px;
+}
+
+table.listagem td:nth-child(3) {
+    width: 90px;
+}
+
+table.detalhes {
+    width: 100%;
+}
+
+table.detalhes td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+h1 {
+text-align: center;
+}
+
+img.mini {
+    width: 50px;
+}
+
+img.mid { 
+    width: 400px;
+}
+
+footer{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.aviso {
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: rgb(251, 248, 229);
+    color:rgb(134, 110, 66);
+}
+
+div.sucesso {
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: rgb(226, 239, 218);
+    color:rgb(74, 116, 67);  
+}
+
+div.erro {
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: rgb(239, 223, 222);
+    color:rgb(157, 75, 69);
+}
+
+@media screen and (max-width:667px){
+    body{
+        display: "flex";
+        flex-direction: column;
+        justify-content: center;
+    }
+    #box1{
+        width: 500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #box2{
+        width:300px;
+        height: 100px;
+        margin: 5px;
+    }
+    #cadastro{
+        padding: 6px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 3px 3px 0.3px rgb(0 0 0 / 30%);
+        opacity: 70%;
+        width: 450px;
+        margin: 0;
+    }
+    #selecao{
+        width: 90%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #f0f2f5;
+        margin: 1px;
+    }
+    .logo{
+        display: flex;
+        width: 80%;
+        height: 100px;
+    }
+}
+@media screen and (max-width:735px) {
+    body{
+        display: "flex";
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #box1{
+        width: 500px;
+        margin: auto;
+    }
+    #box2{
+        width: 400px;
+        height: 230px;
+        margin: 5px;
+    }
+    #cadastro{
+        padding: 6px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 3px 3px 0.3px rgb(0 0 0 / 30%);
+        opacity: 70%;
+        width: 450px;
+        margin: 0;
+    }
+    #selecao{
+        width: 70%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #f0f2f5;
+        margin: 1px;
+    }
+    .logo{
+        display: flex;
+        width: 80%;
+        height: 100%;
+    }
+}
+@media screen and (min-width:736px) and (max-width:1023px) {
+    body{
+        display: "flex";
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #box1{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        margin: auto;
+        align-items: center;
+    }
+    #box2{
+        width: 500px;
+        height: 330px;
+        margin: 5px;
+    }
+    #cadastro{
+        padding: 6px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 3px 3px 0.3px rgb(0 0 0 / 30%);
+        opacity: 70%;
+        width: 450px;
+        margin: 0;
+    }
+    #selecao{
+        width: 62%;
+        border-radius: 8px;
+        background-color: #f0f2f5;
+        margin: 1px;
+    }
+    .logo{
+        display: flex;
+        width: 80%;
+        height: 90%;
+    }
+}
