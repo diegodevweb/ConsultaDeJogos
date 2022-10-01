@@ -9,6 +9,11 @@
         die();
     }
 
+    $banco->query("SET NAMES 'utf8'");
+    $banco->query("SET character_set_connection=utf8");
+    $banco->query("SET character_set_client=utf8");
+    $banco->query("SET character_set_results=utf8");
+
    /* $busca = $banco->query("select * from produtoras");
     if (!$busca) {
         echo "<p>Falha na busca! $banco->error</p>";
