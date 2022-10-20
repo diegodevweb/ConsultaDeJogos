@@ -12,16 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
 </head>
-<nav>
-    <h1>Título</h1>
-</nav>
 <body>
-	<section id="corpo"> 
-        <?php
-            logout();
-            echo sucesso('Logout realizado com sucesso!');
-            echo voltar();
-        ?>
-    </section>
+    <nav>
+        <h1>Logout</h1>
+    </nav>
+        <section id="corpo"> 
+            <?php
+                logout();
+                echo sucesso('Logout realizado com sucesso!');
+                echo voltar();
+            ?>
+        </section>
 </body>
 </html> 

@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+#corpo {
+    width: 270px;
+    font-size: 15pt;
+}
+
+td {
+    padding: 5px;
+}
 
 body {
 	background-color: #ddd;
