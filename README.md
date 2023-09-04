@@ -2,6 +2,8 @@
 
 https://jogos.diegodevwebb.tech
 
+<img src="app/assets/media/assassins.png">
+
 Sistema de busca de jogos desenvolvido em
 PHP. Permite aos usuários buscar os jogos
 cadastrados. Caso tenha permissões de editor,
